@@ -28,6 +28,7 @@ public class FileTrapper extends ZorkaTrapper<String> {
     private final static int ROLLING = 1;
     private final static int DATED   = 2;
 
+    //Not thread-safe
     private final static SimpleDateFormat dformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private final static SimpleDateFormat fformat = new SimpleDateFormat("yyyy-MM-dd");
 
